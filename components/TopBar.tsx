@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 export default function TopBar() {
   return (
@@ -11,9 +11,9 @@ export default function TopBar() {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#3498db',
-    paddingTop: 50,
-    paddingBottom: 15,
-    paddingHorizontal: 20,
+    height: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
+    paddingTop: 30,
   },
   welcomeText: {
     fontSize: 24,
